@@ -9,11 +9,11 @@ const fallbackExperience = [
     tech: ["Power Apps", "Power Automate", "Dataverse", "Azure", "React"]
   },
   {
-    role: "Frontend Engineer",
-    company: "Fabrikam Inc.",
-    dates: "Aug 2021 – Dec 2022",
+    role: "Python Engineer",
+    company: "Codsoft",
+    dates: "Nov 2023 – Dec 2023",
     description: "Developed interactive dashboards and certification portals using React, Node.js, and Microsoft Graph.",
-    tech: ["React", "Node.js", "Microsoft Graph", "JavaScript"]
+    tech: ["Python3", "Dictionaries","Flet"]
   }
 ];
 
