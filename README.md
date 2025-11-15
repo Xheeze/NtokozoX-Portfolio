@@ -65,7 +65,7 @@ Contributions welcome! Feel free to:
 **Ntokozo Xheeze Sibiya**
 - 💼 LinkedIn: [ntokozo-sibiya1](https://www.linkedin.com/in/ntokozo-sibiya1)
 - 🐙 GitHub: [@xheeze](https://github.com/xheeze)
-- 📧 Email: sibiya.ntokozo1@gmail.com
+- 📧 Email: ozo.sibiya@gmail.com
 
 ## 🙏 Acknowledgments
 
