@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-**[View Portfolio](https://xheeze.github.io/pp-portfolio/)** *(Update with your actual GitHub Pages URL)*
+**[View Portfolio](https://xheeze.github.io/NtokozoX-Portfolio/)** *(Update with your actual GitHub Pages URL)*
 
 ## ✨ Features
 
