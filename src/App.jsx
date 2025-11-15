@@ -16,7 +16,7 @@ export default function App() {
       <main>
         <Hero />
         <Skills />
-  <Experience />
+        <Experience />
         <TechGrid />
         <Projects />
         <CertificateGrid />
