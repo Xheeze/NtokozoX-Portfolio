@@ -9,22 +9,6 @@ import jsImg from '../assets/js.bmp'
 import nodeyImg from '../assets/nodey.png'
 import graphiImg from '../assets/graphi.png'
 
-// used directly
-const images = {
-  'power-apps': powrImg,
-  'power-automate': powAutoImg,
-  'dataverse': dataverszImg,
-  'react': reaktImg,
-  'azure': azireImg,
-  'javascript': jsImg,
-  'nodejs': nodeyImg,
-  'microsoft-graph': graphiImg
-}
-
-
-
-
-
 // If images produced by slice script exist in src/assets/tech, they will be bundled by Vite.
 // We attempt dynamic imports via static paths so tree-shaking still works.
 // Fallback to emoji if an image is missing.
@@ -42,7 +26,16 @@ const techItems = [
 
 // Pre-resolve image imports using existing assets in src/assets first,
 // then fall back to the sliced `src/assets/tech/*.webp` if available.
-const images = {}
+const images = {
+  'power-apps': powrImg,
+  'power-automate': powAutoImg,
+  'dataverse': dataverszImg,
+  'react': reaktImg,
+  'azure': azireImg,
+  'javascript': jsImg,
+  'nodejs': nodeyImg,
+  'microsoft-graph': graphiImg
+}
 const tryLoad = (rel) => {
   try { return new URL(rel, import.meta.url).href } catch { return null }
 }
