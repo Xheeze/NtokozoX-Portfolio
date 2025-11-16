@@ -13,7 +13,7 @@ const Certifications: React.FC = () => {
 }
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
-
+//
 export default function App() {
   return (
     <>
