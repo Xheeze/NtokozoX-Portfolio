@@ -42,7 +42,7 @@ const tryLoad = (rel) => {
 // Fallback to tech/ webp outputs if available (sliced output)
 for (const key of ['power-apps','power-automate','dataverse','react','azure','javascript','nodejs','microsoft-graph']) {
   if (!images[key]) {
-    const p = tryLoad(`../assets/tech/${key}.webp`)
+    const p = tryLoad(`../assets/${key}.webp`)
     if (p) images[key] = p
   }
 }
