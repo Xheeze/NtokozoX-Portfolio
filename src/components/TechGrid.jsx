@@ -1,4 +1,29 @@
 import React from 'react'
+// At the top of TechGrid.jsx - explicit imports
+import powrImg from '../assets/powr.png'
+import powAutoImg from '../assets/powAuto.png'
+import dataverszImg from '../assets/dataversz.png'
+import reaktImg from '../assets/reakt.png'
+import azireImg from '../assets/azire.png'
+import jsImg from '../assets/js.bmp'
+import nodeyImg from '../assets/nodey.png'
+import graphiImg from '../assets/graphi.png'
+
+// used directly
+const images = {
+  'power-apps': powrImg,
+  'power-automate': powAutoImg,
+  'dataverse': dataverszImg,
+  'react': reaktImg,
+  'azure': azireImg,
+  'javascript': jsImg,
+  'nodejs': nodeyImg,
+  'microsoft-graph': graphiImg
+}
+
+
+
+
 
 // If images produced by slice script exist in src/assets/tech, they will be bundled by Vite.
 // We attempt dynamic imports via static paths so tree-shaking still works.
@@ -21,17 +46,6 @@ const images = {}
 const tryLoad = (rel) => {
   try { return new URL(rel, import.meta.url).href } catch { return null }
 }
-
-// Primary (existing files in src/assets)
-images['power-apps'] = tryLoad('../assets/powr.png')
-images['power-automate'] = tryLoad('../assets/powAuto.png') || tryLoad('../assets/powr.png')
-images['dataverse'] = tryLoad('../assets/dataversz.png') || tryLoad('../assets/create-manage-model-driven-apps.svg')
-images['react'] = tryLoad('../assets/reakt.png') || tryLoad('../assets/xheezy.png')
-images['azure'] = tryLoad('../assets/azire.png') || tryLoad('../assets/pp_banner.png')
-images['javascript'] = tryLoad('../assets/js.bmp') || tryLoad('../assets/js%20gold.jpg')
-images['nodejs'] = tryLoad('../assets/nodey.png') || tryLoad('../assets/xheeze.jpg')
-images['microsoft-graph'] = tryLoad('../assets/graphi.png') || tryLoad('../assets/520-5206787_microsoft-graph-microsoft-graph-hd-png-download.png')
-
 // Fallback to tech/ webp outputs if available (sliced output)
 for (const key of ['power-apps','power-automate','dataverse','react','azure','javascript','nodejs','microsoft-graph']) {
   if (!images[key]) {
