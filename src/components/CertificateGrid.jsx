@@ -19,7 +19,7 @@ const certificates = [
     description: "Power Platform & Web Developer specializing in Microsoft technologies and modern web solutions.",
     status: "Active"
   },
-  {
+  { //main cert
     name: "MB-210: Microsoft Dynamics 365 Sales Functional Consultant",
     type: "Microsoft Certified",
     points: "350 pts",
