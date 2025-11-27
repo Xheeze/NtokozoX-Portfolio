@@ -18,6 +18,7 @@ function Pyramid() {
         emissive="#003a6b"
         emissiveIntensity={1.0}
         metalness={0.55}
+  
         roughness={0.3}
       />
     </mesh>
