@@ -14,7 +14,8 @@ export function Hero() {
           I build solutions with Power Apps, Power Automate, Dataverse, and
           integrate with modern web stacks like React, JavaScript, and Azure.
         </p>
-        <div className="cta"> // div under hero section
+        {/* div under hero section */}
+         <div className="cta">
           <a className="btn primary" href="#projects">View Projects</a>
           <a className="btn" href="#contact">Get in touch</a>
         </div>
