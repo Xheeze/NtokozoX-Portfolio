@@ -20,7 +20,7 @@ const fallbackExperience = [
     "company": "Codsoft.in (Remote)",
     "dates": " Nov - Dec 2023",
     "description": "Worked on Python full-stack tasks, contributed to backend services and data processing. Gained experience with Django, NumPy and Pandas.",
-    "tech": ["Python", "Django", "NumPy", "Pandas"]
+    "tech": ["Python", "Django", "NumPy", "Pandas", "Dictionaries","Flet"]
   },
   {
     "role": "DSTV Intermediate Technician",
