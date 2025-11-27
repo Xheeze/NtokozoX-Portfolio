@@ -11,6 +11,7 @@
  * Usage:
  *   node scripts/slice-tech-icons.mjs
  *
+ *
  * Optional flags:
  *   --source <path>   Override source image
  *   --prefix <name>   Filename prefix (default: tech)
