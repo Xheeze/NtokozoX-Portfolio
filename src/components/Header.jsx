@@ -19,6 +19,7 @@ export function Header() {
         <img src={logo} alt="Logo" width={40} height={40 } />
         <span>Ntokozo Xheeze Sibiya</span>
       </a>
+      
       <nav aria-label="Primary">
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
