@@ -4,14 +4,14 @@ const fallbackExperience = [
   {
     "role": "Microsoft Developer Intern",
     "company": "Zoe' Projects and Consulting, Sandton",
-    "dates": " - Oct 2025",
-    "description": "Authored intuitive low-code solutions; developed, migrated and cloned the Zo Employee Attendance System from web to Power Platform. Tested and recommended software improvements to deliver strong functionality and optimization.",
+    "dates": " Feb 2025 - Oct 2025",
+    "description": "Authored intuitive low-code solutions; developed, migrated and cloned the Employee Attendance System from web to Power Platform. Tested and recommended software improvements to deliver strong functionality and optimization.",
     "tech": ["Power Platform", "Power Apps", "Dataverse", "JavaScript", "Python"]
   },
   {
     "role": "Microsoft Power Platform Developer Trainee",
     "company": "Afrika Tikkun Services / Mecer Inter-ED, Midrand",
-    "dates": " July -  Dec 2024",
+    "dates": " July 2024 -  Dec 2024",
     "description": "Trainee role focused on Power Apps, Power Automate and Dataverse. Gained skills in model-driven and canvas apps, Power Automate flows, and end-user personalization.",
     "tech": ["Power Apps", "Power Automate", "Dataverse", "Power Virtual Agents"]
   },
