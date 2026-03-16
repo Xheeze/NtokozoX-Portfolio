@@ -4,7 +4,7 @@ import Employ from '../assets/Projects/Employee.png'
 import Presdente from '../assets/Projects/Presidente.png'
 import Hustlers from '../assets/Projects/Hustle.png'
 import Placeholder from '../assets/pp_banner.png' // Temporary placeholder for missing images
-
+//
 const projects = [
   {
     title: 'Employee Attendance',
