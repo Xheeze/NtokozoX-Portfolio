@@ -1,5 +1,5 @@
 import React from 'react'
-
+//
 export default function Resume() {
   const pdfPath = '/resume/NtokozoSibiya_CV.pdf' // place the PDF in public/resume/
 
