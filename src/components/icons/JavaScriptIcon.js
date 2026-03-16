@@ -10,7 +10,7 @@ function JsCube() {
       mesh.current.rotation.x += 0.005
     }
   })
-
+//hey
   return (
     <mesh ref={mesh} castShadow receiveShadow>
       <boxGeometry args={[1.2, 1.2, 1.2]} />
