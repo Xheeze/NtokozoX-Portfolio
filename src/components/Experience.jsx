@@ -2,32 +2,18 @@ import React, { useEffect, useState } from "react";
 
 const fallbackExperience = [
   {
-    "role": "Microsoft Developer Intern",
-    "company": "Zoe' Projects and Consulting, Sandton",
-    "dates": " Feb 2025 - Oct 2025",
-    "description": "Authored intuitive low-code solutions; developed, migrated and cloned the Employee Attendance System from web to Power Platform. Tested and recommended software improvements to deliver strong functionality and optimization.",
-    "tech": ["Power Platform", "Power Apps", "Dataverse", "JavaScript", "Python"]
+    role: "Power Platform Developer",
+    company: "Contoso Ltd.",
+    dates: "July 2024 – Present",
+    description: "Building low-code solutions with Power Apps, Automate, and Dataverse. Led migration of legacy workflows to Microsoft cloud.",
+    tech: ["Power Apps", "Power Automate", "Dataverse", "Azure", "React"]
   },
   {
-    "role": "Microsoft Power Platform Developer Trainee",
-    "company": "Afrika Tikkun Services / Mecer Inter-ED, Midrand",
-    "dates": " July 2024 -  Dec 2024",
-    "description": "Trainee role focused on Power Apps, Power Automate and Dataverse. Gained skills in model-driven and canvas apps, Power Automate flows, and end-user personalization.",
-    "tech": ["Power Apps", "Power Automate", "Dataverse", "Power Virtual Agents"]
-  },
-  {
-    "role": "Python Programming Intern",
-    "company": "Codsoft.in (Remote)",
-    "dates": " Nov - Dec 2023",
-    "description": "Worked on Python full-stack tasks, contributed to backend services and data processing. Gained experience with Django, NumPy and Pandas.",
-    "tech": ["Python", "Django", "NumPy", "Pandas", "Dictionaries","Flet"]
-  },
-  {
-    "role": "DSTV Intermediate Technician",
-    "company": "Multichoice Agencies (Daveyton & Krugersdorp)",
-    "dates": "Aug 2020 - May 2022",
-    "description": "Performed STB installations, system upgrades, and networking for customer installations with high satisfaction ratings.",
-    "tech": ["Hardware", "Networking", "Customer Support"]
+    role: "Frontend Engineer",
+    company: "Fabrikam Inc.",
+    dates: "Aug 2021 – Dec 2022",
+    description: "Developed interactive dashboards and certification portals using React, Node.js, and Microsoft Graph.",
+    tech: ["React", "Node.js", "Microsoft Graph", "JavaScript"]
   }
 ];
 
@@ -68,27 +54,23 @@ function normalizeEntries(entries) {
   const withYear = normalized.map(e => {
     const d = (e.dates || '').trim();
     let start = null;
-    let startLabel = '';
     // match patterns like 'Feb - Aug 2025' (month-range with year at end)
     const mMonthRange = d.match(/([A-Za-z]{3,})\s*-\s*([A-Za-z]{3,})\s*(\d{4})/);
     if (mMonthRange) {
-      startLabel = `${mMonthRange[1]} ${mMonthRange[3]}`;
       start = parseInt(mMonthRange[3], 10);
     } else {
       // match range with years 'Aug 2020 - May 2022' or '2020 - 2022'
       const mYears = d.match(/(19|20)\d{2}/g);
       if (mYears && mYears.length) {
         start = parseInt(mYears[0], 10);
-        startLabel = mYears[0];
       } else {
         // fallback: look for single year
         const mSingle = d.match(/(19|20)\d{2}/);
-        if (mSingle) { start = parseInt(mSingle[0], 10); startLabel = mSingle[0]; }
+        if (mSingle) { start = parseInt(mSingle[0], 10); }
       }
     }
     // attach computed values for rendering
     e._start = start;
-    e._startLabel = startLabel;
     return { e, start };
   });
   withYear.sort((a,b) => {
@@ -186,7 +168,6 @@ export default function Experience() {
                 <span className="exp-company">{exp.company ? `@ ${exp.company}` : ''}</span>
               </div>
               <div className="exp-dates">
-                {exp._startLabel ? <span className="exp-start">{exp._startLabel}</span> : null}
                 {exp.dates ? <span className="exp-full">{exp.dates}</span> : null}
               </div>
                 <div className="exp-description">{cleanDescription(exp)}</div>

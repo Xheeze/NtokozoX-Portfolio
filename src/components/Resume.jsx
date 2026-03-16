@@ -23,8 +23,7 @@ export default function Resume() {
         <div className="resume-col">
           <h4>Selected Experience</h4>
           <ul>
-            <li><strong>Power Platform Developer</strong> — Contoso Ltd. (2023–Present) • Low-code apps, automations, Dataverse migrations</li>
-            <li><strong>Frontend Engineer</strong> — Fabrikam Inc. (2021–2022) • React dashboards, Node APIs</li>
+            <li><strong>Power Platform Developer</strong> — Contoso Ltd. (2024–Present) • Low-code apps, automations, Dataverse migrations</li>
           </ul>
 
           <h4>Certifications</h4>
