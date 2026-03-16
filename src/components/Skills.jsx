@@ -14,7 +14,7 @@ const skillGroups = [
     items: ['Azure (Functions, Static Web Apps)', 'SQL', 'SharePoint', 'Microsoft Graph', 'ALM / DevOps']
   }
 ]
-
+//
 export function Skills() {
   return (
     <section id="skills" className="section">
