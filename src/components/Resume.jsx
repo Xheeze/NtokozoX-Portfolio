@@ -23,7 +23,10 @@ export default function Resume() {
         <div className="resume-col">
           <h4>Selected Experience</h4>
           <ul>
-            <li><strong>Power Platform Developer</strong> — Contoso Ltd. (2024–Present) • Low-code apps, automations, Dataverse migrations</li>
+            <li><strong>Power Platform Developer</strong> — Contoso Ltd. (July 2024–Present) • Low-code apps, Power Automate, Dataverse migrations, Azure integrations</li>
+            <li><strong>Microsoft Dynamics 365 Consultant</strong> — Insight Direct (Jan 2023–June 2024) • Dynamics 365 Sales/Customer Service, MB-210 consulting for enterprise clients</li>
+            <li><strong>Frontend Engineer</strong> — Fabrikam Inc. (Aug 2021–Dec 2022) • React dashboards, Microsoft Graph, SharePoint REST APIs</li>
+            <li><strong>Junior Power Platform Developer</strong> — Wipro (Mar 2020–July 2021) • Canvas & Model-Driven Power Apps, Power Automate approval flows, Teams integration</li>
           </ul>
 
           <h4>Certifications</h4>

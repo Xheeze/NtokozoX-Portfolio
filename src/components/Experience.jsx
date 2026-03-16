@@ -5,15 +5,29 @@ const fallbackExperience = [
     role: "Power Platform Developer",
     company: "Contoso Ltd.",
     dates: "July 2024 – Present",
-    description: "Building low-code solutions with Power Apps, Automate, and Dataverse. Led migration of legacy workflows to Microsoft cloud.",
+    description: "Building low-code solutions with Power Apps, Power Automate, and Dataverse. Led migration of legacy workflows to Microsoft cloud. Integrated Azure Functions with Power Platform connectors.",
     tech: ["Power Apps", "Power Automate", "Dataverse", "Azure", "React"]
+  },
+  {
+    role: "Microsoft Dynamics 365 Consultant",
+    company: "Insight Direct",
+    dates: "Jan 2023 – June 2024",
+    description: "Configured and customised Dynamics 365 Sales and Customer Service modules. Delivered MB-210 functional consulting for enterprise clients across retail and financial services.",
+    tech: ["Dynamics 365", "Power Apps", "Dataverse", "Power Automate", "Azure DevOps"]
   },
   {
     role: "Frontend Engineer",
     company: "Fabrikam Inc.",
     dates: "Aug 2021 – Dec 2022",
-    description: "Developed interactive dashboards and certification portals using React, Node.js, and Microsoft Graph.",
-    tech: ["React", "Node.js", "Microsoft Graph", "JavaScript"]
+    description: "Developed interactive dashboards and certification portals using React, Node.js, and Microsoft Graph. Integrated SharePoint data via REST APIs.",
+    tech: ["React", "Node.js", "Microsoft Graph", "JavaScript", "SharePoint"]
+  },
+  {
+    role: "Junior Power Platform Developer",
+    company: "Wipro",
+    dates: "Mar 2020 – July 2021",
+    description: "Built Canvas and Model-Driven Power Apps for internal HR and procurement workflows. Created Power Automate flows for approval pipelines integrated with Teams and SharePoint.",
+    tech: ["Power Apps", "Power Automate", "SharePoint", "Teams", "Power Fx"]
   }
 ];
 
