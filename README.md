@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-**[View Portfolio](https://xheeze.github.io/NtokozoX-Portfolio/)** *(Update with your actual GitHub Pages URL)*
+**[View Portfolio](https://xheeze.github.io/pp-portfolio/)** *(Update with your actual GitHub Pages URL)*
 
 ## ✨ Features
 
@@ -65,7 +65,7 @@ Contributions welcome! Feel free to:
 **Ntokozo Xheeze Sibiya**
 - 💼 LinkedIn: [ntokozo-sibiya1](https://www.linkedin.com/in/ntokozo-sibiya1)
 - 🐙 GitHub: [@xheeze](https://github.com/xheeze)
-- 📧 Email: ozo.sibiya@gmail.com
+- 📧 Email: sibiya.ntokozo1@gmail.com
 
 ## 🙏 Acknowledgments
 

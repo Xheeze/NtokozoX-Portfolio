@@ -1140,8 +1140,8 @@ main {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 .project-modal-content {
@@ -1185,8 +1185,8 @@ main {
   justify-content: center;
   z-index: 10;
   transition: all 0.2s ease;
-  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 .project-modal-close:hover {

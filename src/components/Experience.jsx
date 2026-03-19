@@ -9,11 +9,11 @@ const fallbackExperience = [
     tech: ["Power Apps", "Power Automate", "Dataverse", "Azure", "React"]
   },
   {
-    role: "Python Engineer",
-    company: "Codsoft",
-    dates: "Nov 2023 – Dec 2023",
+    role: "Frontend Engineer",
+    company: "Fabrikam Inc.",
+    dates: "Aug 2021 – Dec 2022",
     description: "Developed interactive dashboards and certification portals using React, Node.js, and Microsoft Graph.",
-    tech: ["Python3", "Dictionaries","Flet"]
+    tech: ["React", "Node.js", "Microsoft Graph", "JavaScript"]
   }
 ];
 
@@ -54,27 +54,23 @@ function normalizeEntries(entries) {
   const withYear = normalized.map(e => {
     const d = (e.dates || '').trim();
     let start = null;
-    let startLabel = '';
     // match patterns like 'Feb - Aug 2025' (month-range with year at end)
     const mMonthRange = d.match(/([A-Za-z]{3,})\s*-\s*([A-Za-z]{3,})\s*(\d{4})/);
     if (mMonthRange) {
-      startLabel = `${mMonthRange[1]} ${mMonthRange[3]}`;
       start = parseInt(mMonthRange[3], 10);
     } else {
       // match range with years 'Aug 2020 - May 2022' or '2020 - 2022'
       const mYears = d.match(/(19|20)\d{2}/g);
       if (mYears && mYears.length) {
         start = parseInt(mYears[0], 10);
-        startLabel = mYears[0];
       } else {
         // fallback: look for single year
         const mSingle = d.match(/(19|20)\d{2}/);
-        if (mSingle) { start = parseInt(mSingle[0], 10); startLabel = mSingle[0]; }
+        if (mSingle) { start = parseInt(mSingle[0], 10); }
       }
     }
     // attach computed values for rendering
     e._start = start;
-    e._startLabel = startLabel;
     return { e, start };
   });
   withYear.sort((a,b) => {
@@ -172,7 +168,6 @@ export default function Experience() {
                 <span className="exp-company">{exp.company ? `@ ${exp.company}` : ''}</span>
               </div>
               <div className="exp-dates">
-                {exp._startLabel ? <span className="exp-start">{exp._startLabel}</span> : null}
                 {exp.dates ? <span className="exp-full">{exp.dates}</span> : null}
               </div>
                 <div className="exp-description">{cleanDescription(exp)}</div>
