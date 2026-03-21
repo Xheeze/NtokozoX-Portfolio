@@ -2,7 +2,7 @@
 const fs = require('fs')
 const path = require('path')
 const pdf = require('pdf-parse')
-
+//
 const SOURCE = process.argv[2] || path.join('public','resume','NtokozoSibiya_CV.pdf')
 const OUT_TEXT = path.join('public','resume','resume-text.txt')
 const OUT_JSON = path.join('public','resume','resume-experience.json')
