@@ -2,18 +2,39 @@ import React, { useEffect, useState } from "react";
 
 const fallbackExperience = [
   {
-    role: "Power Platform Developer",
-    company: "Contoso Ltd.",
-    dates: "July 2024 – Present",
-    description: "Building low-code solutions with Power Apps, Automate, and Dataverse. Led migration of legacy workflows to Microsoft cloud.",
-    tech: ["Power Apps", "Power Automate", "Dataverse", "Azure", "React"]
+    "role": "AI Engineer/Software Developer Intern",
+    "company": "Netcampus Group, Fourways",
+    "dates": "Apr 2025 - Mar 2026",
+    "description": "Authored intuitive web solutions; developed, migrated and deployed Web Apps and Solutions; Tested and recommended software improvements to deliver strong functionality and optimization.",
+    "tech": ["React.js", "Power Apps", "SQLite", "JavaScript", "Python"]
   },
   {
-    role: "Frontend Engineer",
-    company: "Fabrikam Inc.",
-    dates: "Aug 2021 – Dec 2022",
-    description: "Developed interactive dashboards and certification portals using React, Node.js, and Microsoft Graph.",
-    tech: ["React", "Node.js", "Microsoft Graph", "JavaScript"]
+    "role": "Microsoft Developer Intern",
+    "company": "Zoe' Projects and Consulting, Sandton",
+    "dates": "Feb - Nov 2025",
+    "description": "Authored intuitive low-code solutions; developed, migrated and cloned the Zoe Employee Attendance System from web to Power Platform. Tested and recommended software improvements to deliver strong functionality and optimization.",
+    "tech": ["Power Platform", "Power Apps", "Dataverse", "JavaScript", "Python"]
+  },
+  {
+    "role": "Microsoft Power Platform Developer Trainee",
+    "company": "Afrika Tikkun Services / Mecer Inter-ED, Midrand",
+    "dates": "July - Dec 2024",
+    "description": "Trainee role focused on Power Apps, Power Automate and Dataverse. Gained skills in model-driven and canvas apps, Power Automate flows, and end-user personalization.",
+    "tech": ["Power Apps", "Power Automate", "Dataverse", "Power Virtual Agents"]
+  },
+  {
+    "role": "Python Programming Intern",
+    "company": "Codsoft.in (Remote)",
+    "dates": "Nov - Dec 2023",
+    "description": "Worked on Python full-stack tasks, contributed to backend services and data processing. Gained experience with Django, NumPy and Pandas.",
+    "tech": ["Python", "Django", "NumPy", "Pandas"]
+  },
+  {
+    "role": "DSTV Intermediate Technician",
+    "company": "Multichoice Agencies (Daveyton & Krugersdorp)",
+    "dates": "Aug 2020 - May 2022",
+    "description": "Performed STB installations, system upgrades, and networking for customer installations with high satisfaction ratings.",
+    "tech": ["Hardware", "Networking", "Customer Support"]
   }
 ];
 
