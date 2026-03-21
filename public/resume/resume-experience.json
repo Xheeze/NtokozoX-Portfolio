@@ -1,9 +1,16 @@
 [
   {
+    "role": "AI Engineer/Developer Intern",
+    "company": "Netcampus Group, Fourways",
+    "dates": "Apr 2025 - Mar 2026",
+    "description": "Developed, migrated and Deployed Web Apps and Solutions. Tested and recommended software improvements to deliver strong functionality and optimization.",
+    "tech": ["React.js", "Power Apps", "SQLite", "JavaScript", "Python"]
+  },
+  {
     "role": "Microsoft Developer Intern",
     "company": "Zoe' Projects and Consulting, Sandton",
     "dates": "Feb - Nov 2025",
-    "description": "Authored intuitive low-code solutions; developed, migrated and cloned the Zo Employee Attendance System from web to Power Platform. Tested and recommended software improvements to deliver strong functionality and optimization.",
+    "description": "Authored intuitive low-code solutions; developed, migrated and cloned the Zoe Employee Attendance System from web to Power Platform.",
     "tech": ["Power Platform", "Power Apps", "Dataverse", "JavaScript", "Python"]
   },
   {
