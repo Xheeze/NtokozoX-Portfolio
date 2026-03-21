@@ -2,7 +2,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import pdf from 'pdf-parse'
-
+//
 const SOURCE = process.argv[2] || path.join('public','resume','NtokozoSibiya_CV.pdf')
 const OUT_TXT = path.join('scripts','resume-text.txt')
 const OUT_JSON = path.join('scripts','resume-raw.json')
