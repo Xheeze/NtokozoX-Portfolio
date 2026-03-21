@@ -37,7 +37,7 @@ const fallbackExperience = [
     "tech": ["Hardware", "Networking", "Customer Support"]
   }
 ];
-
+//
 function parseHeuristic(raw) {
   // raw is expected to be an array of strings (blocks) or a single string
   const blocks = Array.isArray(raw) ? raw : [raw];
