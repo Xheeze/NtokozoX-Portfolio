@@ -563,6 +563,7 @@ main {
 
 /* Experience section styles */
 .experience-section { padding: 1.8rem .6rem; text-align: center; }
+.experience-container { display: flex; flex-wrap: wrap; }
 .experience-list { display: grid; gap: 1rem; max-width: 900px; margin: 1.25rem auto 0; }
 .experience-card { display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: start; padding: 1rem; border: 2px solid var(--border); border-radius: 12px; background: linear-gradient(180deg, #ffffff, #fbfdff); box-shadow: 0 6px 18px var(--shadow); }
 .exp-header { display: flex; flex-direction: column; gap: .25rem; }
