@@ -28,7 +28,7 @@ const getArg = (flag, fallback) => {
 const SOURCE = getArg('--source', 'src/assets/raw/cyberpunk-tech-grid.png');
 const PREFIX = getArg('--prefix', 'tech');
 const OUT_DIR = 'src/assets/tech';
-
+//
 async function ensureDir(dir) {
   await fs.promises.mkdir(dir, { recursive: true });
 }
