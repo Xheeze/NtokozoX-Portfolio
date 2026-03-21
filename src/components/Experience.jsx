@@ -37,31 +37,9 @@ const fallbackExperience = [
     "tech": ["Hardware", "Networking", "Customer Support"]
   }
 ];
-//
-function parseHeuristic(raw) {
-  // raw is expected to be an array of strings (blocks) or a single string
-  const blocks = Array.isArray(raw) ? raw : [raw];
-  return blocks.map(b => {
-    // try to pull dates
-    const dateMatch = b.match(/(\b\d{4}\b(?:\s*[–-]\s*\b\d{4}\b)?(?:\s*–\s*Present)?|Present)/i);
-    const dates = dateMatch ? dateMatch[0] : '';
-    let rest = b.replace(dates, '').trim();
-    // split role and company
-    let role = '';
-    let company = '';
-    const atMatch = rest.match(/(.+?)\s+at\s+(.+)/i);
-    if (atMatch) { role = atMatch[1].trim(); company = atMatch[2].trim(); }
-    else {
-      const parts = rest.split(/,|@/).map(p => p.trim()).filter(Boolean);
-      role = parts[0] || rest;
-      company = parts[1] || '';
-    }
-    return { role, company, dates, description: '', tech: [] };
-  });
-}
 
 function normalizeEntries(entries) {
-  
+
   // dedupe by role+company+dates
   const seen = new Map();
   const normalized = [];
@@ -150,12 +128,12 @@ export default function Experience() {
                   const dates = datePart || '';
                   // collect following description lines until next blank or next role pattern
                   let desc = '';
-                  let j = i + 2;
-                  while (j < lines.length && !(/\|/.test(lines[j]) && /\d{4}|Present/i.test(lines[j]))) {
+                  let k = i + 2;
+                  while (k < lines.length && !(/\|/.test(lines[k]) && /\d{4}|Present/i.test(lines[k]))) {
                     // stop if next line looks like a new ROLE in all-caps or contains 'Intern' or 'Developer'
-                    if (/^[A-Z\s]{5,}$/.test(lines[j]) && lines[j].length < 80) break;
-                    desc += (desc ? ' ' : '') + lines[j];
-                    j++;
+                    if (/^[A-Z\s]{5,}$/.test(lines[k]) && lines[k].length < 80) break;
+                    desc += (desc ? ' ' : '') + lines[k];
+                    k++;
                   }
                   parsed.push({ role, company, dates, description: desc, tech: [] });
                 }
@@ -167,7 +145,6 @@ export default function Experience() {
       } catch (e) {
         // ignore
       }
-      // fallback stays
       // fallback stays
     };
     tryFetch();
