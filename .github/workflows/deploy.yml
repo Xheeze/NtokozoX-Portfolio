@@ -36,7 +36,7 @@ jobs:
         run: npm run build
         env:
           # Set base path to your repo name (e.g., /pp-portfolio/)
-          VITE_BASE_PATH: ${{ github.event.repository.name }}/
+          VITE_BASE_PATH: /${{ github.event.repository.name }}/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
