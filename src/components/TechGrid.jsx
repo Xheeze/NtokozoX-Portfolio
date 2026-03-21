@@ -1,8 +1,12 @@
 import React from 'react'
-
-// If images produced by slice script exist in src/assets/tech, they will be bundled by Vite.
-// We attempt dynamic imports via static paths so tree-shaking still works.
-// Fallback to emoji if an image is missing.
+import imgPowr from '../assets/powr.png'
+import imgPowAuto from '../assets/powAuto.png'
+import imgDataversz from '../assets/dataversz.png'
+import imgReakt from '../assets/reakt.png'
+import imgAzire from '../assets/azire.png'
+import imgJs from '../assets/js.bmp'
+import imgNodey from '../assets/nodey.png'
+import imgGraphi from '../assets/graphi.png'
 
 const techItems = [
   { key: 'power-apps', name: 'Power Apps', emoji: '⚡', link: 'https://powerapps.microsoft.com', color: '#742774' },
@@ -15,29 +19,16 @@ const techItems = [
   { key: 'microsoft-graph', name: 'Microsoft Graph', emoji: '📊', link: 'https://graph.microsoft.com', color: '#0078d4' }
 ]
 
-// Pre-resolve image imports using existing assets in src/assets first,
-// then fall back to the sliced `src/assets/tech/*.webp` if available.
-const images = {}
-const tryLoad = (rel) => {
-  try { return new URL(rel, import.meta.url).href } catch { return null }
-}
-
-// Primary (existing files in src/assets)
-images['power-apps'] = tryLoad('../assets/powr.png')
-images['power-automate'] = tryLoad('../assets/powAuto.png') || tryLoad('../assets/powr.png')
-images['dataverse'] = tryLoad('../assets/dataversz.png') || tryLoad('../assets/create-manage-model-driven-apps.svg')
-images['react'] = tryLoad('../assets/reakt.png') || tryLoad('../assets/xheezy.png')
-images['azure'] = tryLoad('../assets/azire.png') || tryLoad('../assets/pp_banner.png')
-images['javascript'] = tryLoad('../assets/js.bmp') || tryLoad('../assets/js%20gold.jpg')
-images['nodejs'] = tryLoad('../assets/nodey.png') || tryLoad('../assets/xheeze.jpg')
-images['microsoft-graph'] = tryLoad('../assets/graphi.png') || tryLoad('../assets/520-5206787_microsoft-graph-microsoft-graph-hd-png-download.png')
-
-// Fallback to tech/ webp outputs if available (sliced output)
-for (const key of ['power-apps','power-automate','dataverse','react','azure','javascript','nodejs','microsoft-graph']) {
-  if (!images[key]) {
-    const p = tryLoad(`../assets/tech/${key}.webp`)
-    if (p) images[key] = p
-  }
+// Static imports so Vite can bundle and hash the assets correctly
+const images = {
+  'power-apps': imgPowr,
+  'power-automate': imgPowAuto,
+  'dataverse': imgDataversz,
+  'react': imgReakt,
+  'azure': imgAzire,
+  'javascript': imgJs,
+  'nodejs': imgNodey,
+  'microsoft-graph': imgGraphi,
 }
 
 export function TechGrid() {
