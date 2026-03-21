@@ -103,7 +103,7 @@ export default function Experience() {
     const tryFetch = async () => {
       try {
         // First try scripts/resume-raw.json
-        let res = await fetch('/resume/resume-experience.json');
+        let res = await fetch(import.meta.env.BASE_URL + 'resume/resume-experience.json');
         if (res.ok) {
           const j = await res.json();
           // If JSON contains structured objects with role/company fields, use them directly
