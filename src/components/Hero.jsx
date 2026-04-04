@@ -17,6 +17,7 @@ export function Hero() {
         <div className="cta">
           <a className="btn primary" href="#projects">View Projects</a>
           <a className="btn" href="#contact">Get in touch</a>
+          //klndlnldlk
         </div>
       </div>
     </section>
