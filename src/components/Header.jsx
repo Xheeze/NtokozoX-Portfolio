@@ -24,7 +24,7 @@ export function Header() {
         <a href="#projects">Projects</a>
         <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
-        <a className="btn" href="#" aria-label="Download resume (placeholder)">Resume</a>
+        <a className="btn" href="./Ntokozo_Sibiya_Resume.pdf" aria-label="Download resume">Resume</a>
       </nav>
     </header>
   )
